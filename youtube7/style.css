@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.parent {
+    background-color: #080808;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+h2 {
+    padding: 10px;
+    font-size: 60px;
+    background-image: url(https://images.steamusercontent.com/ugc/852720452190765449/FE330C2CDBD2E7B7A5DBAA5FC248BA41612EA4EC/?imw=512&imh=342&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px blue;
+    transition: all 0.3s ease 0.1s;
+    cursor: pointer;
+}
+h2:hover {
+    transform: rotate(5deg);
+    -webkit-text-stroke: 2px white;
+}
+@keyframes boxAnimated{
+    from{
+     background: conic-gradient(from 45deg,green 
+     ,white,orange,yellow,blue,gray,violet);
+     scale:1;
+     rotate: -85deg;
+     color: #0adff3;
+     z-index: 9;
+    }
+    
+    to{
+     background: conic-gradient(from 180deg,orange, white,
+     green, purple,pink,teal,crimson);
+     scale: 0.85;
+     font-size: 2rem;
+     rotate: 30deg;
+     border-radius: 50%;
+     z-index: 3;
+
+    }
+}
+@keyframes TextAnimated{
+    from{
+     background: radial-gradient( green, yellow);
+     scale:1;
+     color: rgb(8, 236, 252);border: 5px solid white;
+    }
+    
+    to{
+     background: linear-gradient(pink,red);
+     scale: 0.85;
+     font-size: 2rem;
+     color:#fff;
+     border: 5px solid rgb(2, 2, 2);
+    }
+}
+
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    color: blue;
+    font-size: 1.5rem;
+    color: #080808;
+}
+.card{
+    width: 350px;
+    height: 350px;
+    background-color: #fff;
+     display: flex;
+     flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    border-radius: 10px;
+    border: 5px solid white;
+     animation: boxAnimated 5s infinite alternate; 
+
+}
+.card h1{
+    animation: TextAnimated 5s infinite alternate; 
+}

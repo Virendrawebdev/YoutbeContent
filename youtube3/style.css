@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.parent {
+    background-color: #080808;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+h2 {
+    padding: 10px;
+    font-size: 60px;
+    background-image: url(https://images.steamusercontent.com/ugc/852720452190765449/FE330C2CDBD2E7B7A5DBAA5FC248BA41612EA4EC/?imw=512&imh=342&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px blue;
+    transition: all 0.3s ease 0.1s;
+    cursor: pointer;
+}
+ 
+
+h2:hover {
+    transform: rotate(5deg);
+    -webkit-text-stroke: 2px white;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+   flex-direction:column;
+  justify-content:center;
+  gap: 1rem;
+  color: #010101;
+  margin-left: 30%;
+
+   }
+   .main>div{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color:rgb(11, 11, 11);
+    color: #fff;
+    
+   }
+   .main input{
+    width: 200px;
+    cursor: pointer;
+   }
+
+
+   
+
+    

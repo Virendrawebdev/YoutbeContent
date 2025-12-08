@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.parent {
+    background-color: #080808;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+h2 {
+    padding: 10px;
+    font-size: 60px;
+    background-image: url(https://images.steamusercontent.com/ugc/852720452190765449/FE330C2CDBD2E7B7A5DBAA5FC248BA41612EA4EC/?imw=512&imh=342&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px blue;
+    transition: all 0.3s ease 0.1s;
+    cursor: pointer;
+}
+h2:hover {
+    transform: rotate(5deg);
+    -webkit-text-stroke: 2px white;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+    color: blue;
+    font-size: 1.5rem;
+}
+h3{
+    border: 2px solid rgb(248, 246, 246);
+    padding: 1rem 4rem;
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #fff;
+}
+select{
+    padding: 0.5rem 4rem;
+    background-color:black;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border:2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
