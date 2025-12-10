@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.parent {
+    background-color: #080808;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+h2 {
+    padding: 10px;
+    font-size: 60px;
+    background-image: url(https://images.steamusercontent.com/ugc/852720452190765449/FE330C2CDBD2E7B7A5DBAA5FC248BA41612EA4EC/?imw=512&imh=342&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px blue;
+    transition: all 0.3s ease 0.1s;
+    cursor: pointer;
+}
+h2:hover {
+    transform: rotate(5deg);
+    -webkit-text-stroke: 2px white;
+}
+main{
+margin: 1rem;
+   
+
+}
+input{
+    display: block;
+    padding: 0.5rem;
+    border: 2px solid teal;
+    border-radius: 5px;
+    
+}
+.card{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0.5rem;
+ 
+}
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 7px;
+    overflow: hidden;
+}
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h5{
+    margin-top: 3px;
+}
+.card h3{
+    margin-top: 3px;
+}
+.card p{
+    margin-top: 3px;
+}
