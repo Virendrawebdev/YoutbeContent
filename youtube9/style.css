@@ -10,36 +10,88 @@ html,body{
 main{
     width: 100%;
     height: 100%;
-    background-color: #222;
+    background-image: url(https://www.bing.com/th/id/OIP.3XqfMo-YWAH0iADLgltBxQHaEo?w=221&h=211&c=8&rs=1&qlt=90&o=6&cb=ucfimg1&dpr=1.3&pid=3.1&rm=2&ucfimg=1);
+   background-position: center;
+   background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor:pointer;
+    overflow: hidden;
 }
- main .box{
+.menubar{
+    background-color: #f8f5f5;
     width: 300px;
-    height: 400px;
-    background-color: greenyellow;
-    border: 10px solid gray;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    right: 20%;
+    color: #0b0b0b;
+    font-family: monospace;
+    border-radius: 15px;
+   
+}
+.menubar li{
+    list-style: none;
+    padding: 0.9rem;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    border:none;
+    
+}
+.menubar li i{
+    padding-right:10px;
+}
+.menubar li:hover{
+    border: 1px solid gray;
     border-radius: 10px;
+    background-color: #f3eeee;
 }
-img{
-    width: 40px;
-    height: 40px;
-    position:absolute;
-    transform: translate(-50%, -150%);
-    border-radius: 50%;
+.taskbar{
+    width: 100%;
+    height: 60px;
+    background-color:#fcf9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 0;
 }
-h1{
-    padding: 1.5rem 3rem;
-    font-size: 1.5rem;
-    font-weight: 800;
-    position:absolute;
-    color: aliceblue;
-    transform: translate(-50%, -200%);
-    border-radius:5px;
-    background-color: teal;
-    border: 2px solid rgb(6, 229, 249);
-
+.icons{
+   width: 45px;
+    height: 45px;  
+}
+.icons img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.icons:hover{
+    width: 46px;
+    height: 46px;
+    background-color:transparent;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+}
+.icon:hover{
+    padding: 0.1rem;
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.search{
+    width: 15%;
+    
+}
+.search input{
+    width: 100%;
+    padding: 0.3rem 1rem;
+    border-radius: 25px;
 }

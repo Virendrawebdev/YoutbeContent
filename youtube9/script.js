@@ -1,18 +1,13 @@
-let box = document.querySelector('.box');
-let img =document.querySelector('img');
-let h1 =document.querySelector('h1');
-
-box.addEventListener('mouseover',function(){
-    box.style.backgroundColor="red";
+let menubar=document.querySelector(".menubar");
+window.addEventListener('click',function(dets){
+    menubar.style.top=dets.clientY +"px";
+    menubar.style.left=dets.clientX +"px";
+    if(menubar.style.display==="none"){
+      menubar.style.display="block";  
+    }else{
+       menubar.style.display="none"; 
+    }
 })
 
-box.addEventListener('mouseout',function(){
-    box.style.backgroundColor="yellow";
-})
 
-window.addEventListener('mousemove',function(dets){
-   img.style.left=dets.clientX +"px";
-    img.style.top=dets.clientY +"px";
-    h1.style.left=dets.clientX +"px";
-    h1.style.top=dets.clientY +"px";
-})
+// https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}
